@@ -1,0 +1,39 @@
+.transaction{
+    width: 412px;
+    padding: 0 14px;
+    h4{
+        margin: 41px 0;
+        font-weight: bold;
+    }
+    .tranBx{
+        display: flex;
+        margin: 20px 0;
+        .hisBx{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            img{
+                margin-right:14px;
+                height: 54px;
+            }
+            .moneyBx{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                h5{
+                    @include transaction;
+                    span{
+                        color: #4AD619;
+                    }
+                }
+                h6{
+                    @include transaction;
+                    color: #B2B2B2;
+                }
+            }
+        } 
+    }  
+}
+
+
+// font-family: 'Inter', sans-serif;
