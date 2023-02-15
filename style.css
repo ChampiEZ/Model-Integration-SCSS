@@ -45,8 +45,12 @@ body {
   padding: 0 14px;
 }
 .transaction h4 {
+  font-family: "Poppins";
+  font-style: normal;
   margin: 41px 0;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 33px;
+  font-size: 22px;
 }
 .transaction .tranBx {
   display: flex;
@@ -81,6 +85,35 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 23px;
   color: #B2B2B2;
+}
+
+.asset h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  margin: 41px 0;
+  font-weight: 700;
+  line-height: 33px;
+  font-size: 22px;
+}
+.asset .assetBx {
+  width: 407px;
+  height: 174px;
+  padding: 20px 30px;
+  background: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
+  border-radius: 30px;
+}
+.asset .assetBx .txtBx h5 {
+  font-size: 19px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  line-height: 23px;
+}
+.asset .assetBx .txtBx .nmbBx {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 33px;
 }
 
 /*# sourceMappingURL=style.css.map */

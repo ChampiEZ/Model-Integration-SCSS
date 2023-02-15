@@ -1,0 +1,24 @@
+.asset{
+    h4{
+        @include title;
+    }
+    .assetBx{
+        width: 407px;
+        height: 174px;
+        padding: 20px 30px;
+        background: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
+        border-radius: 30px;
+        .txtBx{
+            h5{
+                @include transaction;
+            }
+            .nmbBx{
+                display: flex;  
+                justify-content: space-between; 
+                font-weight: 600;
+                font-size: 27px;
+                line-height: 33px;
+            }
+        }
+    }
+}

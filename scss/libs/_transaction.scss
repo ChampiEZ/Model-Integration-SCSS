@@ -2,8 +2,7 @@
     width: 412px;
     padding: 0 14px;
     h4{
-        margin: 41px 0;
-        font-weight: bold;
+        @include title;
     }
     .tranBx{
         display: flex;

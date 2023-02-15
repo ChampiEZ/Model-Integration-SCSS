@@ -4,3 +4,12 @@
     font-family: 'Inter', sans-serif;
     line-height: 23px;
 }
+
+@mixin title{
+    font-family: 'Poppins';
+    font-style: normal;
+    margin: 41px 0;
+    font-weight: 700;
+    line-height: 33px;
+    font-size: 22px;
+}
