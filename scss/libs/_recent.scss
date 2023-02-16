@@ -1,0 +1,69 @@
+.recent{
+    width: 70%;
+    .titlePart{
+        display: flex;
+        justify-content: space-between;
+        h4{
+            @include title;
+            margin: 23px 0;
+        }
+        a{
+            h4{
+                color: #B2B2B2;
+                transition: 0.15s;
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .trade{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: rgba(32, 35, 43, 0.7);
+        backdrop-filter: blur(4px);
+        border-radius: 30px;
+        padding: 17px 30px;
+        .btc{
+            height: 50px;    
+            width: 50px;    
+        }
+        a{
+            background: #000000;
+            border-radius: 30px;
+            transition: 0.5s;
+            padding: 6px 17.12px;
+            &:hover{
+                background: #3c3b3b;
+            }
+        }
+        .recBx{
+            display: flex;
+            flex-direction: column;
+            p{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 21px;
+                opacity: .95;
+                span{
+                    opacity: .7;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 17px;
+                    line-height: 21px;
+                }
+                .bl{
+                    color: 
+                    #1970D6;
+                }
+                .gr{
+                    color: #4AD619;
+                }
+            }
+        }
+    }
+}

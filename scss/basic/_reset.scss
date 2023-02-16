@@ -1,7 +1,17 @@
+// Reset CSS
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
     color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, li{
+    list-style: none;
 }
