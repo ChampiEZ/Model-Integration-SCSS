@@ -27,6 +27,11 @@
         border-radius: 30px;
         padding: 17px 30px;
         margin: 20px 0;
+        @media screen and (max-width: 772px){
+            .none{
+                display: none;
+            }
+        }
         .btc{
             height: 50px;    
             width: 50px;    
