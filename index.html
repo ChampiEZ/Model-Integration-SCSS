@@ -28,23 +28,62 @@
         </nav>
     </aside> -->
 
-    <header class="red">
-        <img src="img/Logo.png" alt="">
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <!-- important the order before the nav -->
-        <nav class="green">
-          <ul>
-            <li><a href="">Location</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">Beer</a></li>
-            <li><a href="">Team</a></li>
-          </ul>
-        </nav>
-        <label for="nav-toggle" class="nav-toggle-label">
-          <span></span>
-        </label>
-    </header> 
+<header class="red">
+    <img src="img/Logo.png" alt="">
+    <div>
+      <div class="container">
+        <img src="img/Vector.png" alt="Dashboard_logo" />
+        <h2>Dashboard</h2>
+      </div>
+      <div class="middle-container purple">
+        <div class="el-li">
+          <img src="img/Vector2.png" alt="" />
+          <h2>Invoices</h2>
+        </div>
+        <div class="el-li">
+          <img src="img/Vector3.png"  alt="" />
+          <h2>Clients</h2>
+        </div>
+        <div class="el-li">
+          <img src="img/vectorPro.png"  alt="" />
+          <h2>Products</h2>
+        </div>
+        <div class="el-li">
+          <img src="img/Vector5.png"  alt="" />
+          <h2>Messages</h2>
+        </div>
+        <div class="el-li">
+          <img src="img/vector6.png"  alt="" />
+          <h2>Settings</h2>
+        </div>
+        <div class="el-li">
+          <img src="img/Vector7.png"  alt="" />
+          <h2>Help</h2>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-container">
+        <div class="el-li">
+            <img src="img/Vector8.png"  alt="Logout_logo" />
+            <h2>Log Out</h2>
+        </div>
+    </div>
+</header>
 
+
+
+    <div class="roger">
+        <h2>Hi, Rogers</h2>
+        <h3>coucou</h3>
+        <div class='container'>
+            <input type="text" id="searchInput" placeholder="Search..">
+            <div id='submitsearch'
+              style="">
+              <span>Search</span>
+              
+            </div>
+        </div>
+    </div>
 
     <!-- <section class="recent">
         <div class="titlePart">
@@ -111,16 +150,19 @@
 
 
     <script>
-        $(".burger").click(function() {
-        $(this).toggleClass('active');
-        $("ul.menu li").slideToggle('fast');
-    })
+        const navToggle = document.querySelector('.nav-toggle');
+        const navToggleLabel = document.querySelector('.nav-toggle-label');
 
-    $(window).resize(function() {
-        if ($(window).width() > 650) {
-            $('ul.menu li').removeAttr('style');
+        navToggle.addEventListener('click', () => {
+        document.body.classList.toggle('nav-open');
+        });
+
+        navToggleLabel.addEventListener('keypress', (event) => {
+        if (event.key === 'Enter') {
+            document.body.classList.toggle('nav-open');
         }
-    })
+        });
+
     </script>
 
 </body>
