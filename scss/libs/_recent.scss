@@ -1,5 +1,6 @@
 .recent{
-    width: 70%;
+    width: 96%;
+    margin: 0 auto;
     .titlePart{
         display: flex;
         justify-content: space-between;
@@ -25,6 +26,7 @@
         backdrop-filter: blur(4px);
         border-radius: 30px;
         padding: 17px 30px;
+        margin: 20px 0;
         .btc{
             height: 50px;    
             width: 50px;    

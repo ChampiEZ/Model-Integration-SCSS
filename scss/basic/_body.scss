@@ -4,6 +4,9 @@
 body{
     background: #000;
     display: flex;
+    @media screen and (max-width: 1200px){
+        flex-direction: column;
+    }
 }
 
 .blue{
