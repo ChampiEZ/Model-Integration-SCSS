@@ -9,11 +9,46 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
-    
+<!--     
+    <aside class="red">
+        <img src="img/Logo.png" alt="">
+        <nav>
+            <a href="#">DASHBOARD</a>
+            <ul class="menu">
+                <li><a href="#">Invoice</a>
+                </li>
+                <li><a href="#">Invoice</a>
+                </li>
+                <li><a href="#">Invoice</a>
+                </li>
+                <li><a href="#">Invoice</a>
+                </li>
+            </ul>
+            <a href="#">Log Out</a>
+        </nav>
+    </aside> -->
 
-    <section class="recent">
+    <header class="red">
+        <img src="img/Logo.png" alt="">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <!-- important the order before the nav -->
+        <nav class="green">
+          <ul>
+            <li><a href="">Location</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Beer</a></li>
+            <li><a href="">Team</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+    </header> 
+
+
+    <!-- <section class="recent">
         <div class="titlePart">
-            <h4>Recent transactions</h4>
+            <h4>Recent Transactions</h4>
             
             <a href="#"><h4>See all coins</h4></a>
         </div>
@@ -35,7 +70,7 @@
             <a href="#">Trade</a>
         </div>
 
-    </section>
+    </section> -->
 
 
 
@@ -74,6 +109,19 @@
             </div>
     </section>   -->
 
+
+    <script>
+        $(".burger").click(function() {
+        $(this).toggleClass('active');
+        $("ul.menu li").slideToggle('fast');
+    })
+
+    $(window).resize(function() {
+        if ($(window).width() > 650) {
+            $('ul.menu li').removeAttr('style');
+        }
+    })
+    </script>
 
 </body>
 </html>
